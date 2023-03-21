@@ -34,9 +34,13 @@ The two-sample t-test conducted using the t.test() function in R showed that the
 ![lot2_ttest](screenshots/lot2_t_test.png)
 ![lot3_ttest](screenshots/lot3_t_test.png)
 
-Using the subset() argument in the t.test() function, we performed individual t-tests on each manufacturing lot to compare their PSI to the population mean of 1,500 PSI. Results showed that Lot 1 had no statistical difference, Lot 2 had no significant difference, and Lot 3 had a significant difference in PSI compared to the population mean. Lot 3 data may need to be revaluated or discarded due to its p-value being too low.
+Using the subset() argument in the t.test() function, we performed individual t-tests on each manufacturing lot to compare their PSI to the population mean of 1,500 PSI. Results showed that Lot 1 had no statistical difference, Lot 2 had no significant difference, and Lot 3 had a significant difference in PSI compared to the population mean and had a p-value of 0.04 meaning we have to reject the null hypothesis.
 
 ### Study Design: MechaCar vs Competition
+We propose a study to compare the fuel efficiency of MechaCar vehicles to their competitors using mpg. The goal is to assess the cost-effectiveness of MechaCar vehicles for consumers.
 
+The null hypothesis is that there is no statistical difference in the fuel efficiency of MechaCar vehicles compared to the competitors, while the alternative hypothesis is that MechaCar vehicles have higher fuel efficiency.
+
+We will use a two-sample t-test to test the hypothesis since we will collect data from MechaCar vehicles and their competitors, and we will assume that the samples are independent, randomly selected, and normally distributed.
 
 
